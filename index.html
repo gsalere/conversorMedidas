@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Conversor de Medidas</title>
+</head>
+<body>
+    <main>
+        <h1>Conversor de Medidas</h1>
+        <div class="principal">
+            <div>
+                <label for="n1">Medida (em m):</label>
+                <input type="number" name="n1" id="n1">
+            </div>
+
+        <div>
+            <div><input type="radio" name="medida" value="1" id="mm">Milímetro</div>
+            <div><input type="radio" name="medida" value="2" id="cm">Centímetro</div>
+            <div><input type="radio" name="medida" value="3" id="dm">Decímetro</div>
+            
+        </div>
+           
+        <div >
+            <div><input type="radio" name="medida" value="4" id="dam">Decâmetro</div>
+            <div><input type="radio" name="medida" value="5" id="hm">Hectômetro</div>
+            <div><input type="radio" name="medida" value="6" id="km">Quilômetro</div> 
+                   
+        </div>
+
+            
+            
+            <input class="btn" type="button" value="Converter" onclick="converter()">
+            
+            <p id="resposta"></p>
+
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
