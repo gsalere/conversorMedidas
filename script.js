@@ -1,13 +1,18 @@
 function converter(){
-    let n1 = parseFloat(document.getElementById('n1').value)
+    let n = document.getElementById('n1').value
+    
     let res = document.getElementById('resposta')
     let calculo
 
     const opcao = document.querySelector('input[name=medida]:checked').value;
     
    
-
-    switch (Number(opcao)){
+    if(n == ''){
+        
+        alert("Por favor, insira um valor!")
+    }else{
+        let n1 = parseFloat(n)
+        switch (Number(opcao)){
         case 1:
             calculo = n1 *1000
             res.innerHTML = `${n1} metros equivale a ${calculo} mm`
@@ -35,8 +40,7 @@ function converter(){
         default:
             alert("Por favor, selecione uma unidade de medida!")
             break
+        }
     }
-    
-
-
 }
+
